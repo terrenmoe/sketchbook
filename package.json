@@ -1,0 +1,77 @@
+{
+  "name": "sketchbook",
+  "version": "1.0.0",
+  "description": "My webpack project",
+  "scripts": {
+    "build-dev": "webpack -d --mode development",
+    "build-prod": "webpack -p --mode production",
+    "clean": "rm build/app.js",
+    "start": "webpack-dev-server --hot --mode development",
+    "test": "jest",
+    "test:watch": "npm test -- --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/terrenmoe/sketchbook.git"
+  },
+  "keywords": [
+    "p5",
+    "js",
+    "sketch",
+    "sketchbook",
+    "react",
+    "redux",
+    "redis",
+    "babel",
+    "webpack"
+  ],
+  "author": "Alex Rossiter <terrenmoe@gmail.com>",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/terrenmoe/sketchbook/issues"
+  },
+  "homepage": "https://github.com/terrenmoe/sketchbook#readme",
+  "dependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-flow": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-typescript": "^7.3.3",
+    "airbnb-prop-types": "^2.13.2",
+    "babel-eslint": "^10.0.2",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "css-loader": "^3.1.0",
+    "eslint-config-airbnb": "^17.1.1",
+    "eslint": "^5.16.0",
+    "eslint-loader": "^2.2.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^1.6.1",
+    "file-loader": "^4.1.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "p5": "^0.9.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-redux": "^7.1.0",
+    "redux": "^4.0.4",
+    "redux-thunk": "^2.3.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.38.0",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.7.2"
+  },
+  "exports": {
+    "./Components/": "./src/Components/",
+    "./Actions/": "./src/Actions/",
+    "./Reducers/": "./src/Reducers/",
+    "./Store/": "./src/Store/",
+    "./Utils/": "./src/Utils/"
+  },
+  "devDependencies": {
+    "babel-jest": "^24.8.0",
+    "jest": "^24.8.0"
+  }
+}
